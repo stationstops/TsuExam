@@ -10,14 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     let ghAPI = GitHubAPI()
-    var prs = [String]()
+    var prs = [GitHubAPI.Response]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    
+     
         self.fetchPRs()
-    
     }
 
     func fetchPRs(){
@@ -26,13 +24,9 @@ class ViewController: UIViewController {
             self?.prs = pullRequests
 
             DispatchQueue.main.async {
-                //reload
+                //reload table
             }
           }
-
     }
-    
-    
-
 }
 

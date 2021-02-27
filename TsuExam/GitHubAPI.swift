@@ -15,7 +15,7 @@ class GitHubAPI{
         let state:String?
     }
     
-    func fetchPRs(completionHandler: @escaping ([String]) -> Void) {
+    func fetchPRs(completionHandler: @escaping ([Response]) -> Void) {
         
         let urlString = GHAPIEndPoint
         let url = URL(string: urlString)
@@ -39,21 +39,7 @@ class GitHubAPI{
             return
         }
         
-        for pullRequest in json{
-                
-            print(pullRequest.state)
-            
-        }
-        
-//
-//        if let pullrequests = json.title{
-//
-//            for pr in pullrequests{
-//                print(pr.title)
-//            }
-//
-//            //completionHandler(self.prs)
-//        }
+        completionHandler(json)
         
     })
     
