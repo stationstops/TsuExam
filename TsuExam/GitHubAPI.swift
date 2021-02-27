@@ -9,10 +9,10 @@ import Foundation
 
 class GitHubAPI{
     
-    let GHAPIEndPoint = "https://api.github.com/repos/magicalpanda/MagicalRecord/pulls"
+    let GHAPIEndPoint = "https://api.github.com/repos/magicalpanda/MagicalRecord/pulls?state=open"
     
     struct Response: Codable{
-        let title:String?
+        let state:String?
     }
     
     func fetchPRs(completionHandler: @escaping ([String]) -> Void) {
@@ -41,7 +41,7 @@ class GitHubAPI{
         
         for pullRequest in json{
                 
-            print(pullRequest.title)
+            print(pullRequest.state)
             
         }
         
