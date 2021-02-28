@@ -12,10 +12,7 @@ class GitHubAPI{
     let GHAPIEndPoint = "https://api.github.com/repos/magicalpanda/MagicalRecord/pulls?state=open"
     
     struct Response: Codable{
-<<<<<<< Updated upstream
-=======
         let title:String?
->>>>>>> Stashed changes
         let state:String?
     }
     
@@ -43,16 +40,7 @@ class GitHubAPI{
             return
         }
         
-<<<<<<< Updated upstream
         completionHandler(json)
-=======
-        for pullRequest in json{
-                
-            print(pullRequest.state)
-            
-        }
->>>>>>> Stashed changes
-        
     })
     
     task.resume()

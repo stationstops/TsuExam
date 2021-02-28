@@ -13,14 +13,8 @@ class ViewController: UITableViewController {
     var prs = [GitHubAPI.Response]()
     
     override func viewDidLoad() {
-<<<<<<< Updated upstream
         super.viewDidLoad()
 
-=======
-    
-        super.viewDidLoad()
-        
->>>>>>> Stashed changes
         self.fetchPRs()
         
         // Uncomment the following line to preserve selection between presentations
@@ -37,12 +31,9 @@ class ViewController: UITableViewController {
             self?.prs = pullRequests
 
             DispatchQueue.main.async {
-<<<<<<< Updated upstream
-                //reload table
-=======
+
                 //reload
                 print(self?.prs.first)
->>>>>>> Stashed changes
             }
           }
     }
