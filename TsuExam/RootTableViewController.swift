@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RootTableViewController.swift
 //  TsuExam
 //
 //  Created by Chris Schoenfeld on 2/26/21.
@@ -7,20 +7,17 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class RootTableViewController: UITableViewController {
 
     let ghAPI = GitHubAPI()
+    let cellIdentifier = "PRCellID"
     var prs = [GitHubAPI.Response]()
     
     override func viewDidLoad() {
-<<<<<<< Updated upstream
         super.viewDidLoad()
 
-=======
-    
-        super.viewDidLoad()
+        tableView.register(PRTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
->>>>>>> Stashed changes
         self.fetchPRs()
         
         // Uncomment the following line to preserve selection between presentations
@@ -37,38 +34,35 @@ class ViewController: UITableViewController {
             self?.prs = pullRequests
 
             DispatchQueue.main.async {
-<<<<<<< Updated upstream
-                //reload table
-=======
-                //reload
-                print(self?.prs.first)
->>>>>>> Stashed changes
+                self?.tableView.reloadData()
             }
           }
     }
 
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return prs.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PRTableViewCell
 
-        // Configure the cell...
+        if let title = prs[indexPath.row].title{
+            
+            cell.changeText?.text = title
+        }
 
         return cell
+    
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -117,4 +111,7 @@ class ViewController: UITableViewController {
 
 }
 
+class PRTableViewCell:UITableViewCell{
 
+    @IBOutlet weak var changeText: UILabel?
+}

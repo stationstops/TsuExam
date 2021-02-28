@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PRTableViewController.swift
 //  TsuExam
 //
 //  Created by Chris Schoenfeld on 2/26/21.
@@ -7,22 +7,11 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
-
-    let ghAPI = GitHubAPI()
-    var prs = [GitHubAPI.Response]()
-    
+class PRTableViewController: UITableViewController {
+        
     override func viewDidLoad() {
-<<<<<<< Updated upstream
         super.viewDidLoad()
 
-=======
-    
-        super.viewDidLoad()
-        
->>>>>>> Stashed changes
-        self.fetchPRs()
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,24 +19,6 @@ class ViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    
-    func fetchPRs(){
-    
-        ghAPI.fetchPRs { [weak self] (pullRequests) in
-            self?.prs = pullRequests
-
-            DispatchQueue.main.async {
-<<<<<<< Updated upstream
-                //reload table
-=======
-                //reload
-                print(self?.prs.first)
->>>>>>> Stashed changes
-            }
-          }
-    }
-
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -86,7 +57,7 @@ class ViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
+        }    
     }
     */
 
@@ -114,7 +85,5 @@ class ViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
-
-

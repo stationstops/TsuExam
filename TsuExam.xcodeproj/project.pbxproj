@@ -18,6 +18,12 @@
 		72EFA9BC25E9906F00BA7EA7 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFA9BB25E9906F00BA7EA7 /* GitHubAPI.swift */; };
 		72EFA9BD25E9906F00BA7EA7 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFA9BB25E9906F00BA7EA7 /* GitHubAPI.swift */; };
 		72EFA9BE25E9906F00BA7EA7 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFA9BB25E9906F00BA7EA7 /* GitHubAPI.swift */; };
+		72EFA9C725E9AD0C00BA7EA7 /* PRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFA9C525E9AD0C00BA7EA7 /* PRTableViewController.swift */; };
+		72EFA9C825E9AD0C00BA7EA7 /* PRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFA9C525E9AD0C00BA7EA7 /* PRTableViewController.swift */; };
+		72EFA9C925E9AD0C00BA7EA7 /* PRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFA9C525E9AD0C00BA7EA7 /* PRTableViewController.swift */; };
+		72EFA9CA25E9AD0C00BA7EA7 /* PRTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFA9C625E9AD0C00BA7EA7 /* PRTableViewController.xib */; };
+		72EFA9CB25E9AD0C00BA7EA7 /* PRTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFA9C625E9AD0C00BA7EA7 /* PRTableViewController.xib */; };
+		72EFA9CC25E9AD0C00BA7EA7 /* PRTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EFA9C625E9AD0C00BA7EA7 /* PRTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,8 @@
 		72EFA9AA25E98E2F00BA7EA7 /* TsuExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsuExamUITests.swift; sourceTree = "<group>"; };
 		72EFA9AC25E98E2F00BA7EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72EFA9BB25E9906F00BA7EA7 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		72EFA9C525E9AD0C00BA7EA7 /* PRTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRTableViewController.swift; sourceTree = "<group>"; };
+		72EFA9C625E9AD0C00BA7EA7 /* PRTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,8 @@
 				72EFA99325E98E2F00BA7EA7 /* LaunchScreen.storyboard */,
 				72EFA99625E98E2F00BA7EA7 /* Info.plist */,
 				72EFA9BB25E9906F00BA7EA7 /* GitHubAPI.swift */,
+				72EFA9C525E9AD0C00BA7EA7 /* PRTableViewController.swift */,
+				72EFA9C625E9AD0C00BA7EA7 /* PRTableViewController.xib */,
 			);
 			path = TsuExam;
 			sourceTree = "<group>";
@@ -239,6 +249,7 @@
 				72EFA99525E98E2F00BA7EA7 /* LaunchScreen.storyboard in Resources */,
 				72EFA99225E98E2F00BA7EA7 /* Assets.xcassets in Resources */,
 				72EFA99025E98E2E00BA7EA7 /* Main.storyboard in Resources */,
+				72EFA9CA25E9AD0C00BA7EA7 /* PRTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EFA9CB25E9AD0C00BA7EA7 /* PRTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EFA9CC25E9AD0C00BA7EA7 /* PRTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EFA98D25E98E2E00BA7EA7 /* ViewController.swift in Sources */,
+				72EFA9C725E9AD0C00BA7EA7 /* PRTableViewController.swift in Sources */,
 				72EFA98925E98E2E00BA7EA7 /* AppDelegate.swift in Sources */,
 				72EFA98B25E98E2E00BA7EA7 /* SceneDelegate.swift in Sources */,
 				72EFA9BC25E9906F00BA7EA7 /* GitHubAPI.swift in Sources */,
@@ -276,6 +290,7 @@
 			files = (
 				72EFA9A025E98E2F00BA7EA7 /* TsuExamTests.swift in Sources */,
 				72EFA9BD25E9906F00BA7EA7 /* GitHubAPI.swift in Sources */,
+				72EFA9C825E9AD0C00BA7EA7 /* PRTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +300,7 @@
 			files = (
 				72EFA9AB25E98E2F00BA7EA7 /* TsuExamUITests.swift in Sources */,
 				72EFA9BE25E9906F00BA7EA7 /* GitHubAPI.swift in Sources */,
+				72EFA9C925E9AD0C00BA7EA7 /* PRTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
