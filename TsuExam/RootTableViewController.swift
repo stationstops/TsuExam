@@ -15,8 +15,6 @@ class RootTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.register(PRTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
         self.fetchPRs()
         
@@ -51,15 +49,12 @@ class RootTableViewController: UITableViewController {
         return prs.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> PRTableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PRTableViewCell
 
-        if let title = prs[indexPath.row].title{
-            
-            cell.changeText?.text = title
-        }
-
+        cell.update(for: prs[indexPath.row])
+    
         return cell
     
     }
@@ -109,9 +104,4 @@ class RootTableViewController: UITableViewController {
     }
     */
 
-}
-
-class PRTableViewCell:UITableViewCell{
-
-    @IBOutlet weak var changeText: UILabel?
 }
